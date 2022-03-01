@@ -1,0 +1,9 @@
+on:
+  push:
+    paths:
+      - parameters.xml
+jobs:
+  build:
+    steps:
+      run: |
+        mv parameters.xml test.xml
